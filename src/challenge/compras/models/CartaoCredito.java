@@ -21,7 +21,7 @@ public class CartaoCredito {
         if (compra.getValorCompra() <= limiteDisponivel) {
             limiteDisponivel -= compra.getValorCompra();
             valorTotal += compra.getValorCompra();
-            System.out.println("Compra realizada: " + compra);
+            System.out.println("Compra realizada!");
             return true;
         } else {
             System.out.println("Compra não realizada. Valor excede o limite disponível do cartão.\n");
